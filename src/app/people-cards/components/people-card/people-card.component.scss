@@ -1,10 +1,10 @@
 .people-card {
   display: block;
   padding: 1.25rem;
-  background-color: $white;
+  background-color: var(white);
   border: 1px solid var(--color-gray-dark);
   //@include border-radius(0.1875rem);
-  //@include box-shadow (1px, 1px, 4px, 0px, $gray, 0.3);
+  //@include box-shadow (1px, 1px, 4px, 0px, var(--color-gray), 0.3);
   //@include transition (all, 0.3s, ease);
 
   &:hover,
@@ -29,13 +29,12 @@
     &--16-9-ratio {
       padding-bottom: 56.2%;
     }
-
   }
 
   &__title {
     margin-bottom: 0.625rem;
     a {
-      //@include font-mix (var(--color-gray), $body-font, 1.25rem, 1, bold, none);
+      //@include font-mix (var(--color-gray), var(--font-body), 1.25rem, 1, bold, none);
       &:hover {
         color: var(--color-gray-medium);
       }
@@ -43,7 +42,7 @@
   }
 
   &__description {
-    //@include font-mix (var(--color-gray), $body-font, 1rem, 1.2, normal, none);
+    //@include font-mix (var(--color-gray), var(--font-body), 1rem, 1.2, normal, none);
     //@include ellipsis--block(3);
   }
 
@@ -62,11 +61,10 @@
   }
 
   &__read-more {
-    //@include font-mix (var(--color-gray), $body-font, 1rem, 1, normal, none);
+    //@include font-mix (var(--color-gray), var(--font-body), 1rem, 1, normal, none);
   }
 
   &__icon {
     color: var(--color-gray);
   }
-
 }
