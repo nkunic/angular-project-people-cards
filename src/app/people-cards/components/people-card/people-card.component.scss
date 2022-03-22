@@ -9,7 +9,7 @@
   &:hover,
   &:focus {
     border-color: var(--color-gray-dark);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: var(--color-gray-dark) 0px 0.3125rem 1rem;
   }
 
   &__image {
@@ -57,7 +57,7 @@
     line-height: 1;
     overflow: hidden;
     overflow-wrap: break-word;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
     display: -webkit-box;
