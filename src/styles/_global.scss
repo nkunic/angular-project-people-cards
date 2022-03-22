@@ -7,7 +7,7 @@
 *,
 *:before,
 *:after {
-  //@include box-sizing(inherit);
+  box-sizing: inherit;
 }
 
 /* HTML & BODY */
@@ -22,7 +22,7 @@ body {
 html {
   position: relative;
   min-height: 100%;
-  //@include box-sizing(border-box);
+  box-sizing: border-box;
   font-size: 87.5%;
   @media (min-device-width: 768px) {
     font-size: 100%;
@@ -51,7 +51,13 @@ h6 {
 
 /* PARAGRAPHS */
 p {
-  //@include font($gray-dark, var(--font-body), 1rem, 1, normal, none);
+  font: {
+    family: var(--font-body);
+    size: 1rem;
+    weight: normal;
+  }
+  color: var(--color-gray-dark);
+  line-height: 1;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -64,7 +70,7 @@ p + p {
 a {
   outline: 0;
   text-decoration: none;
-  //@include transition(all, 0.3s, linear);
+  transition: all, 0.3s, ease-in-out;
   &:hover {
     text-decoration: none;
   }
