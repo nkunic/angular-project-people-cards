@@ -5,7 +5,13 @@
   tabindex="0"
 >
   <header class="people-card__image people-card__image--{{ imgRatio }}-ratio">
-    <img [src]="'https://cdn.jsdelivr.net/gh/nkunic/angular-project-people-cards@master/src/assets/images/' + card.imgName" [alt]="card.name" />
+    <img
+      [src]="
+        'https://cdn.jsdelivr.net/gh/nkunic/angular-project-people-cards@master/src/assets/images/' +
+        card.imgName
+      "
+      [alt]="card.name"
+    />
   </header>
 
   <main class="people-card__content">
