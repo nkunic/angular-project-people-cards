@@ -1,9 +1,5 @@
 .people-card__title {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
   text-align: center;
   font: {
     family: var(--font-body);
@@ -12,6 +8,25 @@
   }
   color: var(--color-black);
   line-height: 1.2;
+}
+
+.people-card__title + .people-card__description {
+  margin-top: 1.25rem;
+}
+
+.people-card__description {
+  text-align: center;
+  font: {
+    family: var(--font-body);
+    size: 1rem;
+    weight: normal;
+  }
+  color: var(--color-gray-dark);
+  line-height: 1;
+}
+
+.people-card__description + .people-card__grid {
+  margin-top: 2.5rem;
 }
 
 .people-card__grid {

@@ -1,5 +1,5 @@
 <h1 class="people-card__title">{{ title }}</h1>
-
+<p class="people-card__description">{{ description }}</p>
 <div class="people-card__grid">
   <ng-container *ngFor="let card of cards">
     <app-people-card [imgRatio]="'1-1'" [card]="card"> </app-people-card>
