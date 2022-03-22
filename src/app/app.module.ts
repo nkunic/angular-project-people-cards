@@ -7,7 +7,7 @@ import {
   FontAwesomeModule,
   FaIconLibrary,
 } from '@fortawesome/angular-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, PeopleCardsModule, FontAwesomeModule],
@@ -17,6 +17,6 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 export class AppModule {
   constructor(library: FaIconLibrary) {
     // Add an icon to the library for convenient access in other components
-    library.addIcons(faCoffee);
+    library.addIcons(faAngleRight);
   }
 }
