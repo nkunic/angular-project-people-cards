@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { CardModel } from '../../model/card.model';
 
-import { faAngleRight } from '@fortawesome/free-regular-svg-icons';
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-people-card',
