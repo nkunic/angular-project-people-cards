@@ -9,7 +9,7 @@ import { CardModel } from '../model/card.model';
 export class PeopleCardContainerComponent {
   title = 'People Cards Grid';
   description =
-    'CSS variables, CSS grid, Flex, SCSS, Aspect ratio, Focus tab, Ellipsis block...';
+    'Angular, Typescript, CSS variables, CSS grid, Flex, SCSS, Aspect ratio, Focus tab, Ellipsis block, Font awesome icons...';
 
   cards: CardModel[] = [
     {

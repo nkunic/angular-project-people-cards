@@ -32,11 +32,22 @@
 .people-card__grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(17.5rem, 20.8125rem));
-  grid-auto-rows: minmax(31.25rem, 1fr);
   grid-gap: 1.25rem;
   margin: 0 auto;
   justify-content: center;
   width: 100%;
+
+  &--16-9 {
+    grid-auto-rows: minmax(24rem, 1fr);
+  }
+
+  &--1-1 {
+    grid-auto-rows: minmax(31.25rem, 1fr);
+  }
+
+  & + & {
+    margin-top: 2.5rem;
+  }
 
   @media (min-device-width: 1920px) {
     max-width: 112rem;
