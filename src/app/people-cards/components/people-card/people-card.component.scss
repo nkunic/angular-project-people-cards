@@ -10,6 +10,11 @@
   &:focus {
     border-color: var(--color-gray-dark);
     box-shadow: var(--color-gray-dark) 0px 0.3125rem 1rem;
+    .people-card__title {
+      a {
+        color: var(--color-primary);
+      }
+    }
   }
 
   &__image {
@@ -41,9 +46,6 @@
       }
       color: var(--color-black);
       line-height: 1;
-      &:hover {
-        color: var(--color-gray-dark);
-      }
     }
   }
 
@@ -72,9 +74,21 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding-top: 1.25rem;
     border-top: 1px solid var(--color-gray-dark);
+    &:hover {
+      .people-card__read-more {
+        color: var(--color-secondary);
+      }
+      .people-card__icon {
+        color: var(--color-secondary);
+      }
+    }
+  }
+
+  .people-card__read-more + .people-card__icon {
+    margin-left: 0.625rem;
   }
 
   &__read-more {
@@ -85,12 +99,9 @@
     }
     color: var(--color-black);
     line-height: 1;
-    &:hover {
-      color: var(--color-gray-dark);
-    }
   }
 
   &__icon {
-    color: var(--color-gray);
+    color: var(--color-black);
   }
 }
