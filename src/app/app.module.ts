@@ -3,11 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { PeopleCardsModule } from './people-cards/people-cards.module';
 import { AppComponent } from './app.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {
+  FontAwesomeModule,
+  FaIconLibrary,
+} from '@fortawesome/angular-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, PeopleCardsModule, FontAwesomeModule],
   declarations: [AppComponent],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+  constructor(library: FaIconLibrary) {
+    // Add an icon to the library for convenient access in other components
+    library.addIcons(faCoffee);
+  }
+}
